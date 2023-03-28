@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./LoggedOut.css";
+import "../css/LoggedOut.css";
 import {
     Container,
     Tab,
