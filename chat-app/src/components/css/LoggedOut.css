@@ -1,0 +1,37 @@
+/* Logged out component */
+.loggedOutDiv {
+    background-color: rgb(234, 234, 234);
+    height: 100%;
+    width: 550px;
+}
+.loggedOutButton {
+    position: absolute;
+    top: 460px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn {
+    width: 250px;
+}
+
+/* Login */
+#loginRegister-tab-login[aria-selected="true"] {
+    background-color: rgb(122, 158, 210);
+    border: solid;
+    border-color: rgb(122, 158, 210)
+}
+.loginDiv {
+    background-color: rgb(122, 158, 210);
+    height: 330px;
+}
+
+/* Register */
+#loginRegister-tab-register[aria-selected="true"] {
+    background-color: rgb(131, 210, 122);
+    border: solid;
+    border-color: rgb(131, 210, 122);
+}
+.registerDiv {
+    background-color: rgb(131, 210, 122);
+    height: 330px;
+}
