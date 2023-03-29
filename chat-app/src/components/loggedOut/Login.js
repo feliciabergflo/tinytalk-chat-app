@@ -4,17 +4,18 @@ import {
     InputGroup,
     Button
 } from "react-bootstrap";
+import "../css/LoggedOut.css";
 
 function Login() {
     return (
-        <div className="px-3">
+        <div>
             <Form className="pt-4">
                 <Form.Group className="pb-3" controlId="formUsername">
                     <InputGroup>
                         <InputGroup.Text>
                             <img id="usernameIcon" src="../images/person-fill.svg" alt="Username icon" width="20px" />
                         </InputGroup.Text>
-                        <Form.Control type="" placeholder="Användarnamn" required/>
+                        <Form.Control type="text" placeholder="Username" required/>
                     </InputGroup>
                 </Form.Group>
                 <Form.Group className="pb-3" controlId="formPassword">
@@ -22,19 +23,16 @@ function Login() {
                         <InputGroup.Text>
                             <img id="passwordIcon" src="../images/key-fill.svg" alt="Password icon" width="20px" />
                         </InputGroup.Text>
-                        <Form.Control type="password" placeholder="Lösenord" required/>
+                        <Form.Control type="password" placeholder="Password" required/>
                     </InputGroup>
                 </Form.Group>
                 <p id="forgotPwd">
-                        <a href="/">Glömt lösenordet?</a>
-                    </p>
-                <div className="text-center loggedOutButton">
-                    <Button variant="primary" type="submit" size="lg">
-                        Logga in
+                    <a href="/">Forgot your password?</a>
+                </p>
+                <div className="text-center">
+                    <Button className="loggedOutButton" variant="primary" type="submit" size="lg">
+                        Log in
                     </Button>
-                    <p id="registerLink">
-                        <a href="/">Registrera dig!</a>
-                    </p>
                 </div>
             </Form>
         </div>
